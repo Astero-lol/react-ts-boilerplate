@@ -6,7 +6,3 @@
 @custom-media --large-only screen and (min-width: 64.0625em) and (max-width: 90em);
 @custom-media --xlarge screen and (min-width: 90.0625em);
 @custom-media --xlarge-only screen and (min-width: 90.0625em) and (max-width: 120em);
-
-:root {
-
-}

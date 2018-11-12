@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Component from 'components/Component';
+import Component from 'components/component';
 
 import './app.css'
 
