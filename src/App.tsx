@@ -1,18 +1,18 @@
 import * as React from 'react';
 
-import Component from 'components/component';
+import Component from './components/component';
 
-import './app.css'
+import './app.css';
 
 class App extends React.Component<{}, {}> {
-  public render() {
-    return (
-      <div className='app'>
-        <p>Display</p>
-        <Component />
-      </div>
-    );
-  }
+    public render() {
+        return (
+            <div className='app'>
+                <p>Display123</p>
+                <Component />
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -24,17 +24,3 @@ a {
     color: var(--link-color);
     text-decoration: none;
 }
-
-.app {
-    display: flex;
-
-    @media (--small) {
-        background-color: red;
-    }
-    @media (--medium) {
-        background-color: green;
-    }
-    @media (--large) {
-        background-color: blue;
-    }
-}

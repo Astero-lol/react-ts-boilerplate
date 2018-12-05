@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'eval',
@@ -25,8 +25,8 @@ module.exports = {
             name: 'vendor',
             filename: 'vendor.[hash].js',
             minChunks(module) {
-                return module.context &&
-                    module.context.indexOf('node_modules') >= 0;
+                return module.context
+                    && module.context.indexOf('node_modules') >= 0;
             }
         })
     ],
@@ -34,29 +34,28 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.json'],
         modules: [
             'node_modules',
-            'src',
+            'src'
         ]
     },
     devServer: {
         hot: true,
-        inline: true,
+        inline: true
     },
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 use: ['react-hot-loader/webpack', 'awesome-typescript-loader'],
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    { loader: 'css-loader', options: {  importLoaders: 1 } },
+                    { loader: 'css-loader', options: { importLoaders: 1 } },
                     'postcss-loader'
                 ]
-            },
+            }
         ]
-    },
-    devtool: 'source-map'
+    }
 };
