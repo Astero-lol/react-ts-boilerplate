@@ -1,37 +1,37 @@
 module.exports = {
-    extends: [
+    'extends': [
         'airbnb'
     ],
-    parser: 'babel-eslint',
-    parserOptions: {
-        ecmaVersion: 7,
-        ecmaFeatures: {
-            jsx: true
+    'parser': 'babel-eslint',
+    'parserOptions': {
+        'ecmaVersion': 7,
+        'ecmaFeatures': {
+            'jsx': true
         }
     },
-    env: {
-        browser: true,
-        mocha: true,
-        node: true
+    'env': {
+        'browser': true,
+        'mocha': true,
+        'node': true
     },
-    globals: {
-        benchmark: true,
-        chai: true,
-        expect: true,
-        geminiReact: true,
-        React: true,
-        suite: true
+    'globals': {
+        'benchmark': true,
+        'chai': true,
+        'expect': true,
+        'geminiReact': true,
+        'React': true,
+        'suite': true
     },
-    plugins: [
+    'plugins': [
         'chai-friendly',
         'class-methods-use-this-regexp',
         'jsdoc',
         'sort-class-members'
     ],
-    rules: {
+    'rules': {
         'class-methods-use-this': 0,
         'class-methods-use-this-regexp/class-methods-use-this': [2, {
-            exceptMethods: [
+            'exceptMethods': [
                 'blur',
                 'render*',
                 'getInitialState',
@@ -51,7 +51,7 @@ module.exports = {
         'default-case': 0,
         'func-names': 0,
         'function-paren-newline': 0,
-        indent: [2, 4, { SwitchCase: 1 }],
+        'indent': [2, 4, { SwitchCase: 1 }],
         'jsdoc/newline-after-description': 2,
         'jsx-quotes': [2, 'prefer-single'],
         'max-len': [2, 120, 4, { ignoreComments: true }],
@@ -75,7 +75,7 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
         'jsx-a11y/label-has-for': ['error', { components: ['label'], allowChildren: true }],
         'sort-class-members/sort-class-members': [2, {
-            order: [
+            'order': [
                 '[static-properties]',
                 '[static-methods]',
                 '[static-stuff]',
@@ -85,7 +85,7 @@ module.exports = {
                 '[handling]',
                 '[everything-else]'
             ],
-            groups: {
+            'groups': {
                 'static-stuff': [
                     { type: 'property', static: true, name: 'propTypes' },
                     { type: 'property', static: true, name: 'defaultProps' },
@@ -93,7 +93,7 @@ module.exports = {
                     { type: 'property', static: true, name: 'childContextTypes' },
                     { type: 'property', static: false, name: 'state' }
                 ],
-                lifecycle: [
+                'lifecycle': [
                     { type: 'method', static: false, name: 'constructor' },
                     { type: 'method', static: false, name: 'getChildContext' },
                     { type: 'method', static: false, name: 'componentWillMount' },
@@ -105,24 +105,24 @@ module.exports = {
                     { type: 'method', static: false, name: 'componentWillUnmount' },
                     { type: 'method', static: false, name: 'componentDidCatch' }
                 ],
-                rendering: [
+                'rendering': [
                     { type: 'method', static: false, name: 'render' },
                     { type: 'method', static: false, name: '/^render.+$/' }
                 ],
-                handling: [
+                'handling': [
                     { type: 'method', static: false, name: '/^handle.+$/' }
                 ]
             },
-            accessorPairPositioning: 'getThenSet'
+            'accessorPairPositioning': 'getThenSet'
         }],
         'valid-jsdoc': [2, {
-            matchDescription: '(.+\\.)|^$',
-            prefer: { return: 'returns' },
-            preferType: {
-                boolean: 'Boolean', number: 'Number', object: 'Object', string: 'String'
+            'matchDescription': '(.+\\.)|^$',
+            'prefer': { return: 'returns' },
+            'preferType': {
+                'boolean': 'Boolean', number: 'Number', object: 'Object', string: 'String'
             },
-            requireReturn: false,
-            requireReturnDescription: false
+            'requireReturn': false,
+            'requireReturnDescription': false
         }],
         'no-use-before-define': ['error', { functions: false }]
     }

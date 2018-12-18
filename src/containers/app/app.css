@@ -1,6 +1,6 @@
-@import './common/vars.css';
-@import './common/reset.css';
-@import './common/media.css';
+@import '../../common/vars.css';
+@import '../../common/reset.css';
+@import '../../common/media.css';
 
 /*** --- Document --- ***/
 html,
