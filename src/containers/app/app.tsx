@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { block } from 'bem-cn';
 
 import Component from '../../components/component';
 
@@ -11,10 +12,12 @@ function mapStateToProps(state: any) {
     };
 }
 
+const cn = block('app');
+
 class App extends React.Component<{}, {}> {
     render() {
         return (
-            <div className='app'>
+            <div className={ cn() }>
                 <Component />
             </div>
         );
