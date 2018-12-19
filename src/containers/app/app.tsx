@@ -1,6 +1,7 @@
 import * as React from 'react';
+import cn, { CnFn } from 'cn-decorator';
 import { connect } from 'react-redux';
-import { block } from 'bem-cn';
+import { autobind } from 'core-decorators';
 
 import Component from '../../components/component';
 
@@ -12,10 +13,9 @@ function mapStateToProps(state: any) {
     };
 }
 
-const cn = block('app');
-
+@cn('app')
 class App extends React.Component<{}, {}> {
-    render() {
+    render(cn?: CnFn) {
         return (
             <div className={ cn() }>
                 <Component />

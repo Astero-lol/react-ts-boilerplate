@@ -51,6 +51,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
+                    'babel-loader',
                     'style-loader',
                     { loader: 'css-loader', options: { importLoaders: 1 } },
                     'postcss-loader'
