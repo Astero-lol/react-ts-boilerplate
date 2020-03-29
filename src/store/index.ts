@@ -1,8 +1,8 @@
 import { createStore, applyMiddleware } from 'redux';
 import promise from 'redux-promise';
-import reducer, { AppState } from '../reducers';
+import reducer, { IAppState } from '../reducers';
 
-const initState: AppState = {
+const initState: IAppState = {
     app: {}
 };
 

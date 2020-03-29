@@ -40,6 +40,8 @@ module.exports = {
         'typescript/class-name-casing': 'error',
         'typescript/member-delimiter-style': 'error',
         'typescript/no-empty-interface': 'error',
-        'import/no-extraneous-dependencies': ['error', {'devDependencies': ['**/*.test.{ts,tsx,js,jsx}']}]
+        'import/no-extraneous-dependencies': ['error', {'devDependencies': ['**/*.test.{ts,tsx,js,jsx}']}],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-curly-spacing": [2, {"when": "never", "allowMultiline": false}],
     }
 };

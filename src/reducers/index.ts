@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 
-export type AppState = {};
-type TApplicationState = {
-    app: AppState;
-};
+export interface IAppState {
+    app: {};
+}
 
-export default combineReducers<TApplicationState>({
+export default combineReducers<IAppState>({
     app: (app = {}) => app
 });

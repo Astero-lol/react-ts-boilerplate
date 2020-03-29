@@ -10,7 +10,17 @@
     "object-literal-sort-keys": [false],
     "member-ordering": [false],
     "max-line-length": [false],
-    "no-empty-interface": [false]
+    "no-empty-interface": [false],
+    "allowSyntheticDefaultImports": true,
+    "trailing-comma": [true, {
+      "singleline": "never",
+      "multiline": {
+        "objects": "never",
+        "arrays": "always",
+        "functions": "never",
+        "typeLiterals": "ignore"
+      }
+    }]
   },
   "rulesDirectory": []
 }
